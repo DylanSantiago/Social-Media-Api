@@ -1,6 +1,7 @@
 const { Thought, User } = require('../models');
 
 module.exports = {
+
     getThoughts(req, res) {
         Thought.find()
         .then((thoughts) => res.status(200).json(thoughts))
